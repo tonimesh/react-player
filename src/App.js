@@ -28,8 +28,27 @@ function App() {
     loadSongs();
   }, []);
 
+
+  const activeLiberyHandler = (nextPrev) => {
+    const newSongs = songs.map((song) => {
+      if (song.id === nextPrev.id) {
+        return {
+          ...song,
+          active: true
+        }
+      } else {
+        return {
+          ...song,
+          active: false
+        }
+      }
+
+    })
+    setSongs(newSongs);
+  }
+
   const loadSongs = async () => {
-    let response = await fetch("/data.json");
+    let response = await fetch("./data.json");
     let json = await response.json();
     setData(json);
     setSongs(json.songs);
@@ -46,27 +65,47 @@ function App() {
     setSongInfo({ ...songInfo, currentTime: current, duration, animationPercentage: animation })
   };
 
-  const songEndedHandler = async ()=>{
-    let currentIndex = songs.findIndex((Song) => Song.id === currentSong.id)
-     await setCurrentSong(songs[(currentIndex + 1) % songs.length])
-     if(isPlaying) audioRef.current.play();
-    
-  };
+  const songEndedHandler = () => {
+    //audioRef.current.pause();
+    let currentIndex = songs.findIndex((song) => song.id === currentSong.id)
+    setCurrentSong(songs[(currentIndex + 1) % songs.length])
+    activeLiberyHandler(songs[(currentIndex + 1) % songs.length]);
+    tryToPlay();
+  }
+
+  const tryToPlay = ()=>{
+    if (isPlaying) {
+      const playPromise = audioRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise
+          .then((audio) => {
+            //audioRef.current.play();
+            console.log("playing");
+          })
+          .catch((error) => {
+            console.log(error);
+            tryToPlay();
+          });
+      } else {
+        tryToPlay();
+      }
+    }
+  }
 
   return (
-    <div className={`App ${liberyStatus ? "libery-active" : " "}` }>
+    <div className={`App ${liberyStatus ? "libery-active" : " "}`}>
       <Nav liberyStatus={liberyStatus} setLiberyStatus={setLiberyStatus} />
       {data ?
         <>
           <Song currentSong={currentSong} />
-          <Player setSongs={setSongs} setCurrentSong={setCurrentSong} songs={songs} setSongInfo={setSongInfo} songInfo={songInfo} audioRef={audioRef} isPlaying={isPlaying} setIsPlaying={setIsPlaying} currentSong={currentSong} />
+          <Player tryToPlay={tryToPlay} activeLiberyHandler={activeLiberyHandler} setSongs={setSongs} setCurrentSong={setCurrentSong} songs={songs} setSongInfo={setSongInfo} songInfo={songInfo} audioRef={audioRef} isPlaying={isPlaying} setIsPlaying={setIsPlaying} currentSong={currentSong} />
           <Libery liberyStatus={liberyStatus} setLiberyStatus={setLiberyStatus} setSongs={setSongs} isPlaying={isPlaying} audioRef={audioRef} songs={songs} setCurrentSong={setCurrentSong} />
           <audio
             onTimeUpdate={timeUpdateHandler}
             onLoadedMetadata={timeUpdateHandler}
             ref={audioRef} src={currentSong.audio}
             onEnded={songEndedHandler}
-            ></audio>
+          ></audio>
         </>
         : "Loading"
       }
