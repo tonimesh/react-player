@@ -1,20 +1,20 @@
 {
     "songs": [
         {
-            "name": "Beaver Creek",
-            "cover": "https://chillhop.com/wp-content/uploads/2023/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-300x300.jpg",
-            "artist": "Aso, Middle School, Aviino",
-            "audio": "https://stream.chillhop.com/mp3/10076",
+            "name": "Dhup Lagdi",
+            "cover": "https://pagalnew.com/coverimages/Dhup-Lagdi-Shehnaaz-Gill-500-500.jpg",
+            "artist": "Shehnaaz Gill, Sunny Singh",
+            "audio": "songs/127.mp3",
             "color": ["#205950" , "#2ab3bf"],
             "id": 1,
             "active":true
 
         },
         {
-            "name": "Foresight",
-            "cover": "https://chillhop.com/wp-content/uploads/2024/02/b1f13b18de0af32a1bf083bc7fd4fd3a2033406d-300x300.jpg",
-            "artist": "Enough Cereals",
-            "audio": "https://stream.chillhop.com/mp3/71621",
+            "name": "Let Her Go x Husn",
+            "cover": "https://www.pagalworld.com.cm/siteuploads/thumb/sft140/69999_4.jpg",
+            "artist": "Anuv Jain",
+            "audio": "songs/128.mp3",
             "color": ["#241812" , "#241899"],
             "id": 2,
             "active":false
@@ -49,29 +49,29 @@
 
         },
         {
-            "name": "Foresight",
-            "cover": "https://chillhop.com/wp-content/uploads/2024/02/b1f13b18de0af32a1bf083bc7fd4fd3a2033406d-300x300.jpg",
-            "artist": "Enough Cereals",
-            "audio": "https://stream.chillhop.com/mp3/71621",
+            "name": "Megher Palok",
+            "cover": "https://pagal-world.com.in/siteuploads/thumb/sft1/274_4.jpg",
+            "artist": "Shreya Ghoshal",
+            "audio": "songs/129.mp3",
             "color": ["#241812" , "#241899"],
             "id": 6,
             "active":false
 
         },{
-            "name": "Beaver Creek",
-            "cover": "https://chillhop.com/wp-content/uploads/2023/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-300x300.jpg",
-            "artist": "Aso, Middle School, Aviino",
-            "audio": "https://stream.chillhop.com/mp3/10076",
+            "name": "Bulleya",
+            "cover": "https://pagalsongs.com.in/siteuploads/thumb/sft11/5433_7.webp",
+            "artist": "Papon",
+            "audio": "songs/130.mp3",
             "color": ["#205950" , "#2ab3bf"],
             "id": 7,
             "active":false
 
         },
         {
-            "name": "Foresight",
-            "cover": "https://chillhop.com/wp-content/uploads/2024/02/b1f13b18de0af32a1bf083bc7fd4fd3a2033406d-300x300.jpg",
-            "artist": "Enough Cereals",
-            "audio": "https://stream.chillhop.com/mp3/71621",
+            "name": "Jiyein Kyun",
+            "cover": "https://www.pagalworld.com.cm/siteuploads/thumb/sft140/69616_4.jpg",
+            "artist": "Papon",
+            "audio": "songs/131.mp3",
             "color": ["#241812" , "#241899"],
             "id": 8,
             "active":false
