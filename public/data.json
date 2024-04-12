@@ -21,7 +21,7 @@
 
         },{
             "name": "Zindagi Tere Naam",
-            "cover": "https://www.pagalworld.online/GpE34Kg9Gq/113819/152284-zindagi-tere-naam-from-yodha-mp3-song-300.jpg",
+            "cover": "https://pagalnew.com/coverimages/zindagi-tere-naam-yodha-500-500.jpg",
             "artist": "Vishal Mishra, Kaushal Kishore",
             "audio": "songs/124.mp3",
             "color": ["#205950" , "#2ab3bf"],
@@ -31,7 +31,7 @@
         },
         {
             "name": "Teri Baaton Mein Aisa Uljha Jiya",
-            "cover": "https://www.pagalworld.online/GpE34Kg9Gq/113812/152240-akhiyaan-gulaab-from-teri-baaton-mein-aisa-uljha-jiya-mp3-song-300.jpg",
+            "cover": "https://pagalnew.com/coverimages/title-track-teri-baaton-mein-aisa-uljha-jiya-500-500.jpg",
             "artist": "Mitraz",
             "audio": "songs/125.mp3",
             "color": ["#241812" , "#241899"],
@@ -39,10 +39,10 @@
             "active":false
 
         },{
-            "name": "Beaver Creek",
-            "cover": "https://chillhop.com/wp-content/uploads/2023/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-300x300.jpg",
-            "artist": "Aso, Middle School, Aviino",
-            "audio": "https://stream.chillhop.com/mp3/10076",
+            "name": "Tum Se",
+            "cover": "https://pagalnew.com/coverimages/tum-se-teri-baaton-mein-aisa-uljha-jiya-500-500.jpg",
+            "artist": "Raghav Chaitanya, Varun Jain",
+            "audio": "songs/126.mp3",
             "color": ["#205950" , "#2ab3bf"],
             "id": 5,
             "active":false
