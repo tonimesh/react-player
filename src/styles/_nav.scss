@@ -17,6 +17,13 @@ nav{
     }
 }
 
+.playerName{
+    -webkit-text-stroke: 1px #2332a5;
+    text-shadow: 2px 1px 7px;
+    letter-spacing: 0.9px;
+    color: #dbdbdb !important;
+}
+
 @media  screen and (max-width: 768px) {
     nav{
         button{

@@ -8,7 +8,7 @@ const Nav = ({liberyStatus,setLiberyStatus}) => {
     }
     return(
         <nav>
-            <h1>Waves</h1>
+            <h1 className="playerName">Waves</h1>
             <button onClick={handleClick}>
                 Library
                 <FontAwesomeIcon icon={faMusic} />
