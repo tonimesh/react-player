@@ -76,6 +76,36 @@
             "id": 8,
             "active":false
 
+        },
+        {
+            "name": "Sang Rahiyo",
+            "cover": "https://c.saavncdn.com/636/Sang-Rahiyo-Hindi-2020-20201008073048-500x500.jpg",
+            "artist": "Jasleen Royal ft. Ujjwal Kashyap",
+            "audio": "songs/132.mp3",
+            "color": ["#241812" , "#241899"],
+            "id": 9,
+            "active":false
+
+        },
+        {
+            "name": "Maana Ke Hum Yaar Nahi",
+            "cover": "https://www.pagalworld.us/_big/meri-pyaari-bindu-2017-250.jpg",
+            "artist": "Sachin Sanghvi, Jigar Saraiya",
+            "audio": "songs/133.mp3",
+            "color": ["#241812" , "#241899"],
+            "id": 10,
+            "active":false
+
+        },
+        {
+            "name": "Jogi",
+            "cover": "https://www.pagalworld.us/_big/shaadi-mein-zaroor-aana-2017-250.jpg",
+            "artist": "Anand Raj Anand, Arko, Rashid Khan",
+            "audio": "songs/134.mp3",
+            "color": ["#241812" , "#241899"],
+            "id": 11,
+            "active":false
+
         }
     ]
 }
