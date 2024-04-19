@@ -5,6 +5,8 @@ import "./styles/app.scss";
 // import data from "./data";
 import Libery from "./components/Libery";
 import Nav from "./components/Nav";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faHeartbeat} from "@fortawesome/free-solid-svg-icons";
 
 
 function App() {
@@ -109,6 +111,8 @@ function App() {
         </>
         : "Loading"
       }
+      <br />
+      <span className='mt-4 ending mx-auto'>Developed with <FontAwesomeIcon icon={faHeartbeat}></FontAwesomeIcon> by Tonimesh Mondal</span>
     </div>
   );
 }

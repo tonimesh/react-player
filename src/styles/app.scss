@@ -21,6 +21,21 @@ h3,h4{
 .libery-active{
     margin-left: 10%;
 }
+.ending{
+    font-size: 14px;
+    font-weight: 500;
+    color: #2332a5;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    /* position: absolute; */
+    /* bottom: 0px; */
+    /* right: 0px; */
+    -webkit-text-stroke: 1px #7d84bb;
+    text-shadow: 4px -2px 7px;
+    letter-spacing: 1px;
+}
 
 @import "./_song";
 @import "_player";
