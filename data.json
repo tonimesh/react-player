@@ -106,6 +106,26 @@
             "id": 11,
             "active":false
 
+        },
+        {
+            "name": "Piya Aaye Na",
+            "cover": "https://www.pagalworld.us/_big/aashiqui-2-2013-250.jpg",
+            "artist": "KK, Tulsi Kumar",
+            "audio": "songs/135.mp3",
+            "color": ["#241812" , "#241899"],
+            "id": 12,
+            "active":false
+
+        },
+        {
+            "name": "O Maahi",
+            "cover": "https://pagalnew.com/coverimages/o-maahi-dunki-500-500.jpg",
+            "artist": "Arijit Singh",
+            "audio": "songs/136.mp3",
+            "color": ["#241812" , "#241899"],
+            "id": 13,
+            "active":false
+
         }
     ]
 }
